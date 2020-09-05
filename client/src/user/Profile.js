@@ -14,8 +14,7 @@ import DeleteUser from './DeleteUser'
 import auth from './../auth/auth-helper'
 import { read } from './api-user.js'
 import { Redirect, Link } from 'react-router-dom'
-//import stripeButton from './../assets/images/stripeButton.png'
-import MyOrders from './../order/MyOrders'
+
 
 const styles = theme => ({
   root: theme.mixins.gutters({
