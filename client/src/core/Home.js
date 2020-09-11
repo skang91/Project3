@@ -16,9 +16,15 @@ const styles = theme => ({
     margin: 30,
   },
   img:{
-    backgroundImage: `url("https://d3h0owdjgzys62.cloudfront.net/images/tag_images/8/large/Ecommerce_business_background.jpg")`,
-    height: "400px",
+    backgroundImage: `url("https://www.code-brew.com/wp-content/uploads/2019/10/Header-Image.jpg")`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    width: '100%',
+    height: '400px',
+    //backgroundColor: "#00acff"
   }
+
 })
 
 class Home extends Component {
