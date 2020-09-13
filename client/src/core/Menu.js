@@ -20,7 +20,11 @@ const logoStyle = ({
 //oblique
 const isActive = (history, path) => {
   if (history.location.pathname === path)
+<<<<<<< HEAD
     return { color: '#fff', fontSize:"1.2rem"}
+=======
+    return { color: '#fff', fontSize:"1.2rem"}   //changed font size
+>>>>>>> 82cf2a8fed706d71b8a751327cac388a763515a7
   else
     return { color: '#ffffff',fontSize:"1.2rem"}
 }

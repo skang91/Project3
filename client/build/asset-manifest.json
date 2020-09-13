@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.js": "/static/js/main.f30eaad0.chunk.js",
     "main.js.map": "/static/js/main.f30eaad0.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -15,5 +16,16 @@
     "static/media/Header-Image.jpg": "/static/media/Header-Image.90c73ae9.jpg",
     "static/media/shopping.jpeg": "/static/media/shopping.0c329f75.jpeg",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
+=======
+    "main.js": "/static/js/main.a9150e07.chunk.js",
+    "main.js.map": "/static/js/main.a9150e07.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.486a83dd.chunk.js": "/static/js/2.486a83dd.chunk.js",
+    "static/js/2.486a83dd.chunk.js.map": "/static/js/2.486a83dd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ab82141faacc944fe3052e60de58007e.js": "/precache-manifest.ab82141faacc944fe3052e60de58007e.js",
+    "service-worker.js": "/service-worker.js"
+>>>>>>> 82cf2a8fed706d71b8a751327cac388a763515a7
   }
 }

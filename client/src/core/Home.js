@@ -28,6 +28,39 @@
       },
       
 
+<<<<<<< HEAD
+=======
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+    margin: 30,
+  },
+  img:{
+    backgroundImage: `url("https://www.code-brew.com/wp-content/uploads/2019/10/Header-Image.jpg")`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    width: '100%',
+    height: '400px',
+    //backgroundColor: "#00acff"
+  }
+
+})
+
+class Home extends Component {
+  state = {
+    suggestionTitle: "Latest Products",
+    suggestions: [],
+    categories: []
+  }
+  componentDidMount = () => {
+    listLatest().then((data) => {
+      if (data.error) {
+        console.log(data.error)
+      } else {
+        this.setState({ suggestions: data })
+      }
+>>>>>>> 82cf2a8fed706d71b8a751327cac388a763515a7
     })
     
     class Home extends Component {
