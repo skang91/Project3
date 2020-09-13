@@ -20,15 +20,15 @@ const logoStyle = ({
 //oblique
 const isActive = (history, path) => {
   if (history.location.pathname === path)
-    return { color: '#fff', fontSize:"1.0rem"}
+    return { color: '#fff', fontSize:"1.2rem"}
   else
-    return { color: '#ffffff',fontSize:"1.0rem"}
+    return { color: '#ffffff',fontSize:"1.2rem"}
 }
 const isPartActive = (history, path) => {
   if (history.location.pathname.includes(path))
-    return { color: '#fff', fontSize:"1.0rem" }
+    return { color: '#fff', fontSize:"1.2rem" }
   else
-    return { color: '#ffffff', fontSize:"1.0rem" }
+    return { color: '#ffffff', fontSize:"1.2rem" }
 }
 const Menu = withRouter(({ history }) => (
   <AppBar position="static">
@@ -65,7 +65,7 @@ const Menu = withRouter(({ history }) => (
             <Link style={{ textDecoration: 'none' }} to={"/user/" + auth.isAuthenticated().user._id}>
               <Button style={isActive(history, "/user/" + auth.isAuthenticated().user._id)}>My Profile</Button>
             </Link>
-            <Button color="inherit" onClick={() => {
+            <Button style={{fontSize:'1.2rem'}} color="inherit" onClick={() => {
               auth.signout(() => history.push('/'))
             }}>Sign out</Button>
           </span>)
