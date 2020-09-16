@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Card, { CardMedia } from 'material-ui/Card'
+import Card  from 'material-ui/Card'
 import Typography from 'material-ui/Typography'
 import Icon from 'material-ui/Icon'
 import Grid from 'material-ui/Grid'
@@ -7,25 +7,26 @@ import PropTypes from 'prop-types'
 import { withStyles } from 'material-ui/styles'
 import { read } from './api-product.js'
 import { Link } from 'react-router-dom'
+import CardContent from '@material-ui/core/CardContent'
 
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    margin: 30
+    margin: 30,
   },
-  flex: {
-    display: 'flex',
-    textAlign: 'center',
+  flex:{
+    display:'flex'
   },
   card: {
-    padding: '24px 40px 40px',
-   
+    height: 500,
+    padding: '24px 40px 40px', 
+    textAlign: 'center'
   },
   subheading: {
     margin: 'auto',
-    fontSize: '18px',
-    color: theme.palette.openTitle
+    fontSize: '20px',
+    color: 'black'
   },
   price: {
     padding: '16px',
@@ -35,11 +36,12 @@ const styles = theme => ({
     fontSize: '20px',
     color: '#375a53',
   },
-  media: {
-    height: 400,
+  img: {
+    height: 450,
     display: 'inline-block',
-    width: '40%',
-    margin: 'auto',    
+    width: '100%',
+    margin: 'auto',
+    paddingBottom: '100px'
   },
   icon: {
     verticalAlign: 'sub',
@@ -55,7 +57,7 @@ const styles = theme => ({
   action: {
     margin: '8px 24px',
     display: 'inline-block'
-  }
+  },
 })
 
 class Product extends Component {
@@ -91,16 +93,24 @@ class Product extends Component {
       : '/api/product/defaultphoto'
     const { classes } = this.props
     return (
-      <div className={classes.root}>
-        <Grid container spacing={40}>
-          <Grid item xs={12} sm={12}>
+    <div className={classes.root}>
+
+      <Grid container spacing={40}>
+          <Grid item lg={7} md={7} xs={12} sm={12}>
             <Card className={classes.card}>
-              <div className={classes.flex}>
-                <CardMedia
-                  className={classes.media}
-                  image={imageUrl}
-                  title={this.state.product.name}
-                />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  {this.state.product.name}
+                </Typography>
+              </CardContent> 
+                  <div>
+                    <img className={classes.img} src={imageUrl} alt='slide show'/>
+                  </div>
+            </Card>
+          </Grid>
+
+        <Grid item lg={5} md={5} xs={12} sm={12}>
+          <Card className={classes.card}>
                 <Typography component="p" type="subheading" className={classes.subheading}>
                   {this.state.product.description}<hr />
                   <span className={classes.price}>$ {this.state.product.price}</span>
@@ -114,13 +124,11 @@ class Product extends Component {
                   <hr />
                   <Icon className={classes.icon}>contacts</Icon> <Typography style={{fontSize:'20px'}}> Contact Me </Typography>
                   {this.state.product.contact}<br />
-                  
                 </Typography>
-              </div>
-            </Card>
-          </Grid>
+          </Card>
         </Grid>
-      </div>)
+      </Grid>
+    </div>)
   }
 }
 

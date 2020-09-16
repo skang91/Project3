@@ -8,23 +8,20 @@ import Button from 'material-ui/Button'
 import auth from './../auth/auth-helper'
 import { Link, withRouter } from 'react-router-dom'
 
+
 const logoStyle = ({
      fontSize: "3.8rem",
      fontFamily: "Lobster",
      fontStyle: "oblique",
      color: "white",
-     margin: "auto"
- })
+     margin: "auto"   
+ });
 
 
 //oblique
 const isActive = (history, path) => {
   if (history.location.pathname === path)
-<<<<<<< HEAD
     return { color: '#fff', fontSize:"1.2rem"}
-=======
-    return { color: '#fff', fontSize:"1.2rem"}   //changed font size
->>>>>>> 82cf2a8fed706d71b8a751327cac388a763515a7
   else
     return { color: '#ffffff',fontSize:"1.2rem"}
 }
@@ -35,7 +32,7 @@ const isPartActive = (history, path) => {
     return { color: '#ffffff', fontSize:"1.2rem" }
 }
 const Menu = withRouter(({ history }) => (
-  <AppBar position="static">
+  <AppBar position="sticky">
     <Toolbar>
       <div>
         <Link style={{ textDecoration: 'none' }} to="/">
@@ -47,10 +44,12 @@ const Menu = withRouter(({ history }) => (
           <Button style={isActive(history, "/shops/all")}>All Shops</Button>
         </Link>
       </div>
+
       <Typography style={logoStyle} type="title"  variant="h1" component="h1">
        eBazaar
       </Typography>
-      <div style={{ 'position': 'absolute', 'right': '10px' }}><span style={{ 'float': 'right' }}>
+
+      <div style={{ 'right': '10px' }}><span style={{ 'float': 'right' }}>
         {
           !auth.isAuthenticated() && (<span>
             <Link style={{ textDecoration: 'none' }} to="/signup">
@@ -80,3 +79,5 @@ const Menu = withRouter(({ history }) => (
 ))
 
 export default Menu
+
+ 

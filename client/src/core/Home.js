@@ -3,7 +3,6 @@
     import PropTypes from 'prop-types'
     import { withStyles } from 'material-ui/styles'
     import Grid from 'material-ui/Grid'
-    //import Box from '@material-ui/core/Box';
     import { listLatest, listCategories } from './../product/api-product.js'
     import Search from './../product/Search'
     import Categories from './../product/Categories'
@@ -11,9 +10,10 @@
 
     //import for slide show
    import Slider from "react-slick";
-   import Img1 from './../assets/images/Ecommerce_business_background.jpg'
-   import Img2 from './../assets/images/Header-Image.jpg'
-   import Img3 from './../assets/images/shopping.jpeg'
+   import Img1 from './../assets/images/img1.jpg'
+   import Img2 from './../assets/images/img2.jpg'
+   import Img3 from './../assets/images/img3.png'
+   import Img4 from './../assets/images/img4.jpg'
    import "slick-carousel/slick/slick.css";
    import "slick-carousel/slick/slick-theme.css";
   
@@ -26,46 +26,11 @@
         height: "400px",
         width: '100%'
       },
-      
-
-<<<<<<< HEAD
-=======
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-    margin: 30,
-  },
-  img:{
-    backgroundImage: `url("https://www.code-brew.com/wp-content/uploads/2019/10/Header-Image.jpg")`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    width: '100%',
-    height: '400px',
-    //backgroundColor: "#00acff"
-  }
-
-})
-
-class Home extends Component {
-  state = {
-    suggestionTitle: "Latest Products",
-    suggestions: [],
-    categories: []
-  }
-  componentDidMount = () => {
-    listLatest().then((data) => {
-      if (data.error) {
-        console.log(data.error)
-      } else {
-        this.setState({ suggestions: data })
-      }
->>>>>>> 82cf2a8fed706d71b8a751327cac388a763515a7
-    })
+    
+    });
     
     class Home extends Component {
       state = {
-        suggestionTitle: "Latest Products",
         suggestions: [],
         categories: []
       }
@@ -117,6 +82,11 @@ class Home extends Component {
           {/* image 3 */}
           <div>
             <img className={classes.img} src={Img3} alt='slide show'/>
+          </div>
+
+          {/* image  */}
+          <div>
+            <img className={classes.img} src={Img4} alt='slide show'/>
           </div>
         </Slider>
             <Grid container spacing={24}>
