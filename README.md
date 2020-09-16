@@ -1,12 +1,12 @@
 # eBazaar
 
-Welcome to eBazaar! eBazaar is a platform for multi-vendor marketplacewhich is like - Amazon, eBay, and Etsy. A multi-vendor marketplace refers to an online marketplace business were more than a single buyer and seller initiate or conduct transactions. It acts as a digital middleman that connects both buyers and sellers at a common platform, making it convenient for them to find each other, scale their business, and manage it efficiently.
+Welcome to eBazaar! eBazaar is a platform for multi-vendor marketplace which is like - Amazon, eBay, and Etsy. A multi-vendor marketplace refers to an online marketplace business were more than a single buyer and seller initiate or conduct transactions. It acts as a digital middleman that connects both buyers and sellers at a common platform, making it convenient for them to find each other, scale their business, and manage it efficiently.
 
 Features:
-- User Profiles
+- User Profiles for both buyer and seller
 - Product Search across multiple fields
 - Frontend listing creation and browsing
-- Personal Dashboard for Each Seller
+- Seller Storefront
 - Geolocalization for users and listings
 
 
