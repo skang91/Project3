@@ -13,8 +13,8 @@ Features:
 ## Getting Started
 Click <a href="https://e---bazaar.herokuapp.com/">here</a> to start!
 
-## Home
-![screenshoot](helpers/assets/images/Home.gif)
+## Screen Shots
+![screenshoot](helpers/assets/images/screenshot.gif)
 
 
 ## Technologies used
