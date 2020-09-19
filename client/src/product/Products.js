@@ -74,7 +74,8 @@ class Products extends Component {
             </GridList></div>) : this.props.searched && (<Typography type="subheading" component="h1" className={classes.title}>No products found! :(</Typography>)}
       </div>)
   }
-}
+};
+
 Products.propTypes = {
   classes: PropTypes.object.isRequired,
   products: PropTypes.array.isRequired,
@@ -82,3 +83,8 @@ Products.propTypes = {
 }
 
 export default withStyles(styles)(Products)
+
+
+
+
+
